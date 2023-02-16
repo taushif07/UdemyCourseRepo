@@ -1,0 +1,83 @@
+body {
+    margin:0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
+}
+
+h1 {
+    margin-top: 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin-top: 50px auto 0 auto;
+    color: #66BFBF;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color:#11999E;
+}
+
+.about-me {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/* .middle-container {
+
+}
+
+.bottom-container {
+
+} */
+
+.highlight {
+    text-decoration: underline;
+}
+
+.bottom-cloud {
+    position:absolute;
+    bottom: 300px;
+    left: 250px;
+}
+
+.top-cloud {
+    position: absolute;
+    top:50px;
+    right:250px;
+}
+
+.profile>img {
+    width: 200px;
+    height: 200px;
+}
+
+.skills-img{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.footer-link {
+    color:#11999E;
+}
+
+.skill-row  {
+    width: 50%;
+    margin:100px auto;
+    line-height: 2;
+    text-align: left;
+}
+

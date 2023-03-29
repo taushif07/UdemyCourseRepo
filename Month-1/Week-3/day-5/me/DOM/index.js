@@ -1,1 +1,1 @@
-document.querySelector("ul").lastElementChild.innerHTML = "Taushif"
+document.querySelector("ul").lastElementChild.innerHTML = "Taushif";

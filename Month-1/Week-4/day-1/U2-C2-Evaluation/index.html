@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="create">
+        <h1>Add Products in  Inventory</h1>
+        <form action="" id="form">
+            <input type="text" id="name" placeholder="Product Name" />
+            <select id="category">
+                <option value="">Product Category</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Home Appliances">Home Appliances</option>
+            </select>
+            <input type="text" id="brand" placeholder="brand">
+            <input type="number" id="price" placeholder="Product Price" >
+            <select name="" id="deliveredBy">
+                <option value="">Delivered By</option>
+                <option value="Plane">Plane</option>
+                <option value="Ship">Ship</option>
+                <option value="Delivery Van">Delivery Van</option>
+            </select>
+            <input type="submit" value="Add Inventory">
+        </form>
+        <!--
+            This h2 tag is for showing the total price 
+        -->
+        <h2 id="total-price">Total Price:- 0</h2>
+        <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Catagory</th>
+                <th>Brand</th>
+                <th>Price</th>
+                <th>Delivered By</th>
+                <th>Price Segment</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!-- Here you will append the data as tr-td when the form gets submitted  -->
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

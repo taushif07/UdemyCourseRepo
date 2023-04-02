@@ -82,12 +82,12 @@ const totalInventoryAmount = () => {
     totalPrice = totalPrice + Number(form.price.value);
     console.log(form.price.value);
 
-     return priceHead.innerText = `Total Price:- ${totalPrice}`;
+     return priceHead.innerText = `Total Price ₹ ${totalPrice}`;
 
 }
 
 const removeTotal = (num) => {
     totalPrice = totalPrice - Number(num);
 
-   return  priceHead.innerText = `Total Price:- ${totalPrice}`;
+   return  priceHead.innerText = `Total Price ₹ ${totalPrice}`;
 }

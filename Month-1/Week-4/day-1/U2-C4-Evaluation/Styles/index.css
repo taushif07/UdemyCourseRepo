@@ -1,0 +1,38 @@
+.brandImg>img {
+    width:150px;
+    height:auto;
+}
+.formContainer {
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+
+.formDiv {
+    padding: 20px;
+}
+
+/* Footer Section */
+
+#footer {
+    background-color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.coyright-footer {
+    color:#8f8f8f;
+    margin-top: 10px;
+}
+
+#footer>i {
+    margin: 20px 10px;
+    margin-bottom: 0px;
+}
+
+#footer>i:hover {
+    color: #43d943;
+}
+
+.signUpForm {
+    margin: 7% 0;
+}

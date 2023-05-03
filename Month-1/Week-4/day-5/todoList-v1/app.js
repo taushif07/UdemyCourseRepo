@@ -1,7 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
+let lists = ["eat","sleep","code"];
+
 const app = express();
+
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.static("public"));
 
 app.set("view engine", "ejs");
 
@@ -47,9 +52,18 @@ app.get("/", (req, res) => {
     };
 
     res.render("list", {
-        kindOfDay: day
+        kindOfDay: day,
+        listData: lists
     });
 });
+
+app.post("/", (req, res) => {
+    let list = req.body.textInput;
+
+    lists.push(list);
+
+    res.redirect("/");
+})
 
 app.listen("3000", () => {
     console.log("Server is running in port 3000");

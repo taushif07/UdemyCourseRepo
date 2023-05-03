@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,5 +8,36 @@
 </head>
 <body>
     <h1>Today is <%= kindOfDay %></h1>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="box" id="heading">
+        <h1><%= kindOfDay %></h1>
+    </div>
+    <div class="box">
+        
+            <% for(let i=0;i<listData.length-1;i++) { %>
+                <div class="item">
+                <input type="checkbox">
+                <p><%= listData[i] %></p>
+            </div>
+            <% } %>
+            
+    </div>
+    <div class="box">
+        <form action="/" method="post">
+            <input type="text" placeholder="Add todo" name="textInput">
+            <button type="submit" name="inputButton">+</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,12 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todolist App</title>
-</head>
-<body>
-    <h1>Today is <%= kindOfday %></h1>
-</body>
-</html>
+<%- include('header'); -%>
+
+
+
+    <div class="box" id="heading">
+       <h1><%= listTitle %></h1>
+    </div>
+
+    <div class="box">
+        <% for(let i=0;i<listItems.length;i++) { %>
+            <div class="item">
+                <input type="checkbox" >
+                <p> <%= listItems[i] %></p>
+            </div>
+        <% } %>
+
+        <form action="/" method="post">
+            <input type="text" name="todoItem" placeholder="write todo..." autocomplete="off" />
+            <button type="submit" name="button" value= <%= listTitle  %> >+</button>
+        </form>
+
+    </div>
+
+
+<%- include('footer') -%>

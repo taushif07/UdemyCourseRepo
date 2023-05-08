@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") -%>
+
+<h1>Home</h1>
+<p> <%= homeStartingContent %></p>
+<% publishArr.forEach( (el) => { %>
+    <% let title = el.publishInputContent %>
+    <% let content = el.publishTextAreaContent.substring(0,100); %>
+   <h1><%= title %></h1>
+   <p><%= content %>
+    <a href="/posts/<%=title%>">...Read More</a>
+   </p>
+   
+<% }); %>
+
+<%- include("partials/footer.ejs") -%>
